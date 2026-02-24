@@ -23,9 +23,9 @@ app.get("/", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
-// Start server only AFTER DB connects
+// Start server only AFTER DB connectsnpm run dev
 (async () => {
   await connectDB();
   app.listen(PORT, () => {
